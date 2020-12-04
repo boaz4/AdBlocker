@@ -1,20 +1,22 @@
 {
+    "manifest_version": 2,
+    "name": " AdBlocker",
+    "description": "Blocking web page ads.",
+    "version": "0.0.1",
+    "author": "<Boaz Alemseged>",
+    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/", "declarativeContent"],
+    "background": {
+        "scripts": ["background.js", "blacklist.js"]
+    },
+	"page_action": {
+		"default_popup": "popup.html",
+     		"default_icon": {
+			"16": "icons/hello_extensions.png"}
+    },
 
-  "manifest_version": 2,
-  "name": "Adblocker",
-  "version": "1.0",
-
-  "description": "Blocks webpage ads.",
-
-  "icons": {
-    "48": "icons/border-48.png"
-  },
-
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["borderify.js"]
+    	"icons": {
+		"16": "icons/hello_extensions.png"
     }
-  ]
 
 }
+
