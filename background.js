@@ -6,8 +6,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 		}
 		return {cancel: enabled };
 	},
-	{urls: blacklist},
-	//{urls: ["*://*.doubleclick.net/*"]}, /* replace with list of blacklisted urls */
+	{urls: blocked_domains},
+	//{urls: ["<all_urls>"]}, /* replace with list of blacklisted urls */
 	["blocking"]
 );
-

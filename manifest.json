@@ -1,22 +1,13 @@
 {
-    "manifest_version": 2,
-    "name": " AdBlocker",
-    "description": "Blocking web page ads.",
-    "version": "0.0.1",
-    "author": "<Boaz Alemseged>",
-    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/", "declarativeContent"],
-    "background": {
-        "scripts": ["background.js", "blacklist.js"]
-    },
-	"page_action": {
-		"default_popup": "popup.html",
-     		"default_icon": {
-			"16": "icons/hello_extensions.png"}
-    },
-
-    	"icons": {
-		"16": "icons/hello_extensions.png"
-    }
-
+  "name": "Ad Blocker",
+  "version": "2.0",
+  "description": "An ad blocker that will make browsing the web so much easier.",
+  "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"],
+  "background": {
+    "scripts": ["blocked_domains.js", "background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
 }
-
