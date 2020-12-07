@@ -1,4 +1,6 @@
 var blocked_domains = [
+"*://*.valid-install.com/*",
+"*://*.vpnprime.net/*",
 "*://*.01mspmd5yalky8.com/*",
 "*://*.0byv9mgbn0.com/*",
 "*://*.analytics.247sports.com/*",
